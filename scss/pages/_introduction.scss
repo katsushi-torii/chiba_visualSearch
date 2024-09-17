@@ -1,0 +1,96 @@
+.introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2vh;
+    height: 95vh;
+    padding-top: 5vh;
+
+    > p {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    > section {
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        column-gap: 3vh;
+
+        > figure {
+            display: flex;
+            flex-direction: column;
+            width: 40vh;
+            border: 1px solid black;
+        }
+
+        img {
+            height: 40vh;
+            width: 40vh;
+        }
+
+        blockquote {
+            display: flex;
+            flex-direction: column;
+            padding: 2vh;
+            height: 100%;
+
+            > h4 {
+                font-size: 24px;
+            }
+        }
+
+    }
+
+    > aside {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 20vh;
+        
+        > section {
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            row-gap: 1vh;
+            width: 70%;
+            // border: 1px solid red;
+        }
+
+        ul {
+            display: flex;
+            column-gap: 1vh;
+            > span {
+                height: 8vh;
+                width: 8vh;
+                border: 1px solid black;
+            }
+        }
+
+        > aside {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: grey;
+                color: black;
+                font-weight: 600;
+                border: 2px solid black;
+                height: 8vh;
+                width: 20vh;
+                font-size: 24px;
+
+                &:hover {
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,44 @@
+.comparision {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    width: 100vw;
+    height: 100vh;
+
+    > section {
+        display: flex;
+        justify-content: center;
+        column-gap: 10vh;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+        align-items: center;
+    }
+
+    span {
+        height: 10vh;
+        width: 10vh;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    form {
+        background-color: transparent;
+    }
+
+    input {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        caret-color: transparent;
+        color: transparent;
+    }
+
+}

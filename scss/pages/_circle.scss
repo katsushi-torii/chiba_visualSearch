@@ -1,0 +1,151 @@
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: grey;
+
+    .target {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+        width: 10vh;
+        position: relative;
+        > img {
+            height: 100%;
+            width: 100%;
+        }
+        > span {
+            position: absolute;
+            height: 5vh;
+            width: 5vh;
+            // height: 10vh;
+            // width: 10vh;
+            // border: 0.3vh solid black;
+        }
+        button {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: transparent;
+        }
+        // display: none;
+    }
+
+    .circumference { 
+        // border: 1px solid black;
+        display: none;
+        border-radius: 50%;
+        width: 60vh;
+        height: 60vh;
+        position: relative;
+
+        > .option {
+            position: absolute;
+            z-index: 1;
+            height: 10vh;
+            width: 10vh;
+            transform: translate(-50%, -50%);
+            border: 2px solid black;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        > .color-box {
+            position: absolute;
+            z-index: 2;
+            height: 5vh;
+            width: 5vh;
+            // height: 10vh;
+            // width: 10vh;
+            // border: 0.3vh solid black;
+            transform: translate(-50%, -50%);
+        }
+
+        > .select {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 3;
+            height: 10vh;
+            width: 10vh;
+            border: none;
+            transform: translate(-50%, -50%);
+            background-color: grey;
+            font-size: 24px;
+            
+            display: none;
+        }
+    }
+
+    .center {
+        position: absolute;
+        z-index: 1;
+        height: 10vh;
+        width: 10vh;
+        border: 2px solid black;
+        > .find {
+            background-color: grey;
+            height: 100%;
+            width: 100%;
+            border: none;
+        }
+
+        form {
+            height: 10vh;
+            width: 0.01%;
+            left: 10vh;
+            background-color: transparent;
+            border: none;
+        }
+        #find, #number {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            caret-color: transparent;
+        }
+        > .noTarget {
+            background-color: grey;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 99.99%;
+            border: none;
+            // outline: 2px solid black;
+            font-size: 24px;
+        }
+    }
+
+    .target {
+        display: flex;
+    }
+    .circumference {
+        display: none;
+    }
+    .center {
+        display: none;
+    }
+
+}
+
+.normal {
+    .target {
+        span {
+            height: 10vh;
+            width: 10vh;
+        }
+    }
+
+    .circumference {
+        .color-box {
+            height: 10vh;
+            width: 10vh;
+        }
+    }
+}
