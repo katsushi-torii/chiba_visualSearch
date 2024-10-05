@@ -55,10 +55,6 @@
             let answer = [leftColor, rightColor, selectedColor];
             answers.push(answer);
             count += 1;
-            $('span').eq(0).removeClass();
-            $('span').eq(1).removeClass();
-            $('span').eq(0).addClass(pairs[count][0]);
-            $('span').eq(1).addClass(pairs[count][1]);
         }
         if(count == countMax){
             let stringAnswers = "";
@@ -69,6 +65,12 @@
             $('#answers').val(stringAnswers);
             // console.log($('#answers').val());
             $('form').submit();
+        }
+        if(number == 1 || number == 2){
+            $('span').eq(0).removeClass();
+            $('span').eq(1).removeClass();
+            $('span').eq(0).addClass(pairs[count][0]);
+            $('span').eq(1).addClass(pairs[count][1]);
         }
     })
 
