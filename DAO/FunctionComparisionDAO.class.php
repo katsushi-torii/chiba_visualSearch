@@ -9,7 +9,7 @@
         }
 
         public static function insertAnswer($object){
-            $sql = "INSERT into comparision(colorA, colorB, selectedColor) VALUES (:colorA, :colorB, :selectedColor)";
+            $sql = "INSERT into comparision(dateTime, colorA, colorB, selectedColor) VALUES (now(), :colorA, :colorB, :selectedColor)";
 
             self::$db->query($sql);
 

@@ -1,0 +1,582 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.sample {
+  height: 100vh;
+  background-color: black;
+  background-color: rgb(255, 61, 61);
+}
+
+.circle .R5, .color_check .R5, .introduction .R5, .demo .R5, .comparision .R5 {
+  background-color: #ff4455;
+}
+.circle .R10, .color_check .R10, .introduction .R10, .demo .R10, .comparision .R10 {
+  background-color: #ff7c31;
+}
+.circle .YR5, .color_check .YR5, .introduction .YR5, .demo .YR5, .comparision .YR5 {
+  background-color: #ffae2b;
+}
+.circle .YR10, .color_check .YR10, .introduction .YR10, .demo .YR10, .comparision .YR10 {
+  background-color: #ffbd28;
+}
+.circle .Y5, .color_check .Y5, .introduction .Y5, .demo .Y5, .comparision .Y5 {
+  background-color: #ffe51d;
+}
+.circle .Y10, .color_check .Y10, .introduction .Y10, .demo .Y10, .comparision .Y10 {
+  background-color: #f2ec4a;
+}
+.circle .GY5, .color_check .GY5, .introduction .GY5, .demo .GY5, .comparision .GY5 {
+  background-color: #d0f629;
+}
+.circle .GY10, .color_check .GY10, .introduction .GY10, .demo .GY10, .comparision .GY10 {
+  background-color: #10ff29;
+}
+.circle .G5, .color_check .G5, .introduction .G5, .demo .G5, .comparision .G5 {
+  background-color: #59ffbd;
+}
+.circle .G10, .color_check .G10, .introduction .G10, .demo .G10, .comparision .G10 {
+  background-color: #33ffd4;
+}
+.circle .BG5, .color_check .BG5, .introduction .BG5, .demo .BG5, .comparision .BG5 {
+  background-color: #5afee9;
+}
+.circle .BG10, .color_check .BG10, .introduction .BG10, .demo .BG10, .comparision .BG10 {
+  background-color: #42dee4;
+}
+.circle .B5, .color_check .B5, .introduction .B5, .demo .B5, .comparision .B5 {
+  background-color: #50dbf9;
+}
+.circle .B10, .color_check .B10, .introduction .B10, .demo .B10, .comparision .B10 {
+  background-color: #35bbf4;
+}
+.circle .PB5, .color_check .PB5, .introduction .PB5, .demo .PB5, .comparision .PB5 {
+  background-color: #1798fb;
+}
+.circle .PB10, .color_check .PB10, .introduction .PB10, .demo .PB10, .comparision .PB10 {
+  background-color: #7c17f4;
+}
+.circle .P5, .color_check .P5, .introduction .P5, .demo .P5, .comparision .P5 {
+  background-color: #c801f9;
+}
+.circle .P10, .color_check .P10, .introduction .P10, .demo .P10, .comparision .P10 {
+  background-color: #ff1de8;
+}
+.circle .RP5, .color_check .RP5, .introduction .RP5, .demo .RP5, .comparision .RP5 {
+  background-color: #ff04ac;
+}
+.circle .RP10, .color_check .RP10, .introduction .RP10, .demo .RP10, .comparision .RP10 {
+  background-color: #ff417f;
+}
+.circle .black, .color_check .black, .introduction .black, .demo .black, .comparision .black {
+  background-color: black;
+}
+.circle .white, .color_check .white, .introduction .white, .demo .white, .comparision .white {
+  background-color: white;
+}
+.circle .HSL0, .color_check .HSL0, .introduction .HSL0, .demo .HSL0, .comparision .HSL0 {
+  background-color: hsl(0, 100%, 50%);
+}
+.circle .HSL30, .color_check .HSL30, .introduction .HSL30, .demo .HSL30, .comparision .HSL30 {
+  background-color: hsl(30, 100%, 50%);
+}
+.circle .HSL60, .color_check .HSL60, .introduction .HSL60, .demo .HSL60, .comparision .HSL60 {
+  background-color: hsl(60, 100%, 50%);
+}
+.circle .HSL90, .color_check .HSL90, .introduction .HSL90, .demo .HSL90, .comparision .HSL90 {
+  background-color: hsl(90, 100%, 50%);
+}
+.circle .HSL120, .color_check .HSL120, .introduction .HSL120, .demo .HSL120, .comparision .HSL120 {
+  background-color: hsl(120, 100%, 50%);
+}
+.circle .HSL150, .color_check .HSL150, .introduction .HSL150, .demo .HSL150, .comparision .HSL150 {
+  background-color: hsl(150, 100%, 50%);
+}
+.circle .HSL180, .color_check .HSL180, .introduction .HSL180, .demo .HSL180, .comparision .HSL180 {
+  background-color: hsl(180, 100%, 50%);
+}
+.circle .HSL210, .color_check .HSL210, .introduction .HSL210, .demo .HSL210, .comparision .HSL210 {
+  background-color: hsl(210, 100%, 50%);
+}
+.circle .HSL240, .color_check .HSL240, .introduction .HSL240, .demo .HSL240, .comparision .HSL240 {
+  background-color: hsl(240, 100%, 50%);
+}
+.circle .HSL270, .color_check .HSL270, .introduction .HSL270, .demo .HSL270, .comparision .HSL270 {
+  background-color: hsl(270, 100%, 50%);
+}
+.circle .HSL300, .color_check .HSL300, .introduction .HSL300, .demo .HSL300, .comparision .HSL300 {
+  background-color: hsl(300, 100%, 50%);
+}
+.circle .HSL330, .color_check .HSL330, .introduction .HSL330, .demo .HSL330, .comparision .HSL330 {
+  background-color: hsl(330, 100%, 50%);
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.home > a {
+  border: 3px solid black;
+  background-color: grey;
+  font-size: 28px;
+  padding: 3vh;
+  color: white;
+  font-weight: 600;
+}
+.home > a:hover {
+  background-color: darkgrey;
+}
+
+.distance {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5vh;
+  justify-content: center;
+  align-items: center;
+}
+.distance > section {
+  display: flex;
+  -moz-column-gap: 5vh;
+       column-gap: 5vh;
+  justify-content: center;
+  align-items: center;
+}
+.distance > section > figure {
+  display: flex;
+  -moz-column-gap: 10vh;
+       column-gap: 10vh;
+  height: 30vh;
+  width: 30vh;
+  border: 1px solid black;
+  position: relative;
+}
+.distance > section > figure > aside {
+  position: absolute;
+  z-index: 100;
+  height: 15vh;
+  width: 15vh;
+  background-color: red;
+  align-self: center;
+  border: 0.4vh solid black;
+  left: 7.1vh;
+}
+.distance > section > figure .stimulate {
+  background-color: yellow;
+}
+.distance > aside {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 1vh;
+       column-gap: 1vh;
+}
+.distance > aside button {
+  height: 5vh;
+  width: 5vh;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.comparision {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  width: 100vw;
+  height: 100vh;
+}
+.comparision > section {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 10vh;
+       column-gap: 10vh;
+}
+.comparision aside {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3vh;
+  align-items: center;
+}
+.comparision span {
+  height: 10vh;
+  width: 10vh;
+}
+.comparision h3 {
+  font-size: 32px;
+}
+.comparision form {
+  background-color: transparent;
+}
+.comparision input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  caret-color: transparent;
+  color: transparent;
+}
+
+.stimulate_test, .color_check {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5vh;
+  justify-content: center;
+  align-items: center;
+}
+.stimulate_test > section, .color_check > section {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2vh;
+  -moz-column-gap: 5vh;
+       column-gap: 5vh;
+  justify-content: center;
+  align-items: center;
+}
+.stimulate_test > section > figure, .color_check > section > figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 10vh;
+       column-gap: 10vh;
+  height: 30vh;
+  width: 30vh;
+  border: 1px solid black;
+  position: relative;
+}
+.stimulate_test > section > figure > img, .color_check > section > figure > img {
+  height: 30vh;
+  width: 30vh;
+}
+.stimulate_test > section > figure > aside, .color_check > section > figure > aside {
+  position: absolute;
+  z-index: 100;
+  height: 15vh;
+  width: 15vh;
+  background-color: red;
+  align-self: center;
+  border: 0.4vh solid black;
+  left: 7.1vh;
+  display: flex;
+  justify-content: center;
+}
+.stimulate_test > section > figure h2, .color_check > section > figure h2 {
+  font-weight: 600;
+  z-index: 200;
+  position: absolute;
+  font-size: 50px;
+}
+.stimulate_test > section > figure .stimulate, .color_check > section > figure .stimulate {
+  background-color: red;
+}
+.stimulate_test > section .noImage > aside, .color_check > section .noImage > aside {
+  height: 30vh;
+  width: 30vh;
+  left: 0;
+}
+.stimulate_test > section .circle > aside, .color_check > section .circle > aside {
+  border-radius: 100%;
+}
+.stimulate_test > section .rotated > aside, .color_check > section .rotated > aside {
+  transform: rotate(45deg);
+}
+.stimulate_test > section .outsideSimbol .left, .color_check > section .outsideSimbol .left {
+  left: 1vh;
+}
+.stimulate_test > section .outsideSimbol .right, .color_check > section .outsideSimbol .right {
+  right: 1vh;
+}
+.stimulate_test > section .outsideSimbol .top, .color_check > section .outsideSimbol .top {
+  top: 0.5vh;
+}
+.stimulate_test > section .outsideSimbol .bottom, .color_check > section .outsideSimbol .bottom {
+  bottom: 0vh;
+}
+.stimulate_test > section .colorSimbol > h2, .color_check > section .colorSimbol > h2 {
+  color: rgb(132, 0, 0);
+}
+.stimulate_test > aside, .color_check > aside {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 1vh;
+       column-gap: 1vh;
+}
+.stimulate_test > aside button, .color_check > aside button {
+  height: 5vh;
+  width: 5vh;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2vh;
+  height: 95vh;
+  padding-top: 5vh;
+}
+.introduction > p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.introduction > section {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 3vh;
+       column-gap: 3vh;
+}
+.introduction > section > figure {
+  display: flex;
+  flex-direction: column;
+  width: 40vh;
+  border: 1px solid black;
+}
+.introduction > section img {
+  height: 40vh;
+  width: 40vh;
+}
+.introduction > section blockquote {
+  display: flex;
+  flex-direction: column;
+  padding: 2vh;
+  height: 100%;
+}
+.introduction > section blockquote > h4 {
+  font-size: 24px;
+}
+.introduction > aside {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 20vh;
+}
+.introduction > aside > section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1vh;
+  width: 70%;
+}
+.introduction > aside ul {
+  display: flex;
+  -moz-column-gap: 1vh;
+       column-gap: 1vh;
+}
+.introduction > aside ul > span {
+  height: 8vh;
+  width: 8vh;
+  border: 1px solid black;
+}
+.introduction > aside > aside {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.introduction > aside > aside a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: grey;
+  color: black;
+  font-weight: 600;
+  border: 2px solid black;
+  height: 8vh;
+  width: 20vh;
+  font-size: 24px;
+}
+.introduction > aside > aside a:hover {
+  background-color: black;
+  color: white;
+}
+
+.demo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10vh;
+  padding-top: 20vh;
+}
+.demo > section {
+  display: flex;
+  justify-content: center;
+}
+.demo figure {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2vh;
+}
+.demo figure span {
+  height: 20vh;
+  width: 20vh;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.demo figure figcaption {
+  font-size: 24px;
+}
+.demo > h3 {
+  text-align: center;
+  font-size: 28px;
+}
+.demo > aside {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 2vh;
+       column-gap: 2vh;
+}
+.demo > aside > a {
+  background-color: grey;
+  border: 2px solid black;
+  color: white;
+  padding: 1vh;
+}
+.demo > aside > a:hover {
+  background-color: black;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: grey;
+}
+.circle .target {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 10vh;
+  position: relative;
+}
+.circle .target > img {
+  height: 100%;
+  width: 100%;
+}
+.circle .target > span {
+  position: absolute;
+  height: 5vh;
+  width: 5vh;
+}
+.circle .target button {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+}
+.circle .circumference {
+  display: none;
+  border-radius: 50%;
+  width: 60vh;
+  height: 60vh;
+  position: relative;
+}
+.circle .circumference > .option {
+  position: absolute;
+  z-index: 1;
+  height: 10vh;
+  width: 10vh;
+  transform: translate(-50%, -50%);
+  border: 2px solid black;
+}
+.circle .circumference > .option img {
+  height: 100%;
+  width: 100%;
+}
+.circle .circumference > .color-box {
+  position: absolute;
+  z-index: 2;
+  height: 5vh;
+  width: 5vh;
+  transform: translate(-50%, -50%);
+}
+.circle .circumference > .select {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  height: 10vh;
+  width: 10vh;
+  border: none;
+  transform: translate(-50%, -50%);
+  background-color: grey;
+  font-size: 24px;
+  display: none;
+}
+.circle .center {
+  position: absolute;
+  z-index: 1;
+  height: 10vh;
+  width: 10vh;
+  border: 2px solid black;
+}
+.circle .center > .find {
+  background-color: grey;
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+.circle .center form {
+  height: 10vh;
+  width: 0.01%;
+  left: 10vh;
+  background-color: transparent;
+  border: none;
+}
+.circle .center #find, .circle .center #number {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  caret-color: transparent;
+}
+.circle .center > .noTarget {
+  background-color: grey;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 99.99%;
+  border: none;
+  font-size: 24px;
+}
+.circle .target {
+  display: flex;
+}
+.circle .circumference {
+  display: none;
+}
+.circle .center {
+  display: none;
+}
+
+.normal .target span {
+  height: 10vh;
+  width: 10vh;
+}
+.normal .circumference .color-box {
+  height: 10vh;
+  width: 10vh;
+}/*# sourceMappingURL=style.css.map */
