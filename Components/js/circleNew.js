@@ -1,12 +1,25 @@
     //ここで表示する画像を調整
+    // let colors = [
+    //     "HSL0", "HSL30", "HSL60", "HSL90", "HSL120", 
+    //     "HSL150", "HSL180", "HSL210", "HSL240", "HSL270", 
+    //     "HSL300", "HSL330", "black", "white" 
+    // ];
+
+    // let colors = [
+    //     "red", "green", "blue", "yellow", "purple", "pink", "brown", "orange", "white", "black"
+    // ];
+
     let colors = [
-        "HSL0", "HSL30", "HSL60", "HSL90", "HSL120", 
-        "HSL150", "HSL180", "HSL210", "HSL240", "HSL270", 
-        "HSL300", "HSL330", "black", "white" 
+        "yellow-red", "yellow-green", "blue-green", "purple-blue", "red-purple", "red", "blue", "green", "yellow", "pink", "purple", "white"
     ];
 
     //表示する画像の数
     let item_num = 8;
+    // if(count >= 3){
+    //     item_num = 6;
+    // }else if(count >= 6){
+    //     item_num = 4;
+    // }
 
     //実際表示された画像の配列
     let targets = [];
@@ -63,7 +76,6 @@
     //答えがあるかどうか、あるとしたら答えはどこにあるか
     let answerId = -1;
     for(let i = 0; i < targets.length; i++){
-        console.log(targets[i]);
         if(answer == targets[i]){
             answerId = i;
         }
@@ -103,7 +115,7 @@
 
     //回答を見つけた場合
     $('#find').keyup((e)=>{
-        if(e.keyCode == 32){
+        if(e.code[6] == "E"){
             endTime = Date.now();
             $('#find').css("display", "none");
             $('.select').css("display", "flex");
@@ -114,7 +126,8 @@
     
     //回答を選んだ場合
     $('#number').keyup((e)=>{
-        let selectedNumber = Number(e.code[5]) - 1;
+        console.log(e.code);
+        let selectedNumber = Number(e.code[6]) - 1;
         let responseTime = endTime - startTime;
         if(selectedNumber == -1){
             postAnswer(-1, "no", responseTime);
