@@ -21,8 +21,9 @@ if(!empty($_POST)){
         $newAnswer->setColorA($answerArray[0]);
         $newAnswer->setColorB($answerArray[1]);
         $newAnswer->setSelectedColor($answerArray[2]);
+        // var_dump($newAnswer);
 
-        FunctionComparisionDAO::insertAnswer($newAnswer);
+        // FunctionComparisionDAO::insertAnswer($newAnswer);
     }
 }
 

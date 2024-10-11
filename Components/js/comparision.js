@@ -1,10 +1,10 @@
     //ここで表示する画像を調整
-    // let colors = [
-    //     "HSL0", "HSL30", "HSL60", "HSL90", "HSL120", 
-    //     "HSL150", "HSL180", "HSL210", "HSL240", "HSL270", 
-    //     "HSL300", "HSL330", "black", "white" 
-    // ];
-    let colors = ["HSL330", "black", "white"];
+
+    // let colors = ["yellow-red", "yellow-green", "blue-green"];
+    let colors = [
+        "yellow-red", "yellow-green", "blue-green", "purple-blue", "red-purple", "red", "blue", "green", "yellow", "pink", "purple", "white"
+    ];
+
     let colors_num = colors.length;
 
     //色の組み合わせの配列
@@ -47,15 +47,23 @@
 
     //回答を選んだ場合
     $('input').keyup((e)=>{
-        let number = e.code[5];
-        if(number == 1 || number == 2){
+        let number = e.code[6];
+        if(number == 7){
             let leftColor = $('span').eq(0).attr("class");
             let rightColor = $('span').eq(1).attr("class");
-            let selectedColor = $('span').eq(number-1).attr("class");
+            let selectedColor = $('span').eq(0).attr("class");
+            let answer = [leftColor, rightColor, selectedColor];
+            answers.push(answer);
+            count += 1;
+        }else if(number == 9){
+            let leftColor = $('span').eq(0).attr("class");
+            let rightColor = $('span').eq(1).attr("class");
+            let selectedColor = $('span').eq(1).attr("class");
             let answer = [leftColor, rightColor, selectedColor];
             answers.push(answer);
             count += 1;
         }
+
         if(count == countMax){
             let stringAnswers = "";
             answers.forEach((answer) => {
@@ -66,7 +74,7 @@
             // console.log($('#answers').val());
             $('form').submit();
         }
-        if(number == 1 || number == 2){
+        if(number == 7 || number == 9){
             $('span').eq(0).removeClass();
             $('span').eq(1).removeClass();
             $('span').eq(0).addClass(pairs[count][0]);
