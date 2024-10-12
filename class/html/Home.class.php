@@ -7,7 +7,7 @@
                 <main class="home">
                     <a href="../../Components/view/introduction.php">説明画面へ</a>
                     <a href="../../Components/view/comparision.php">比較テスト</a>
-                    <a href="../../Components/view/circle_noClick.php">本テスト</a>
+                    <a href="../../Components/view/circle_noClick.php">本テスト1</a>
                 </main>
             </body>
             </html>

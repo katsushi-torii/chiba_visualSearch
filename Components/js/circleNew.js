@@ -15,11 +15,9 @@
 
     //表示する画像の数
     let item_num = 8;
-    // if(count >= 3){
-    //     item_num = 6;
-    // }else if(count >= 6){
-    //     item_num = 4;
-    // }
+    if(count >= 60){
+        item_num = 6;
+    }
 
     //実際表示された画像の配列
     let targets = [];
@@ -33,14 +31,7 @@
         let randomId = Math.floor(Math.random() * colors.length);
         let randomColor = colors.splice(randomId, 1);
         targets.push(randomColor[0]);
-        let image = "plain";
-        if(pattern == "shadow"){
-            image = "shadow";
-        }
         let stimulate = $(`
-            <figure class="option">
-                <img src="../../img/bg_image_${image}.png" alt="">
-            </figure>
             <span class="color-box ${randomColor[0]}"></span>
             <button class="select ${i}">${i+1}</button>
                 `);

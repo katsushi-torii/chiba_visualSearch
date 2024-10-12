@@ -23,17 +23,17 @@ if(!empty($_POST)){
     $newAnswer->setTargetId($_POST['target_id']);
     $count = $_POST['count'];
 
-    var_dump($newAnswer);
+    // var_dump($newAnswer);
 
     // FunctionCircumferenceDAO::insertAnswer($newAnswer);
 
     // 実験回数の操作
-    // if($count == 30){
-    //     header("Location: ./home.php");
-    // }
+    if($count == 150){
+        header("Location: ./home.php");
+    }
 }
 
 echo PageHead::pageHead();
-echo Circle::target("normal");
-echo Circle::circleList("noClick");
-echo Circle::script($count, "normal");
+echo Circle::target();
+echo Circle::circleList();
+echo Circle::script($count);

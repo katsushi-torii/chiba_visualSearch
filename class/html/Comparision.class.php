@@ -8,11 +8,11 @@
                 <section>
                     <aside>
                         <span></span>
-                        <h3>7</h3>
+                        <h3>1</h3>
                     </aside>
                     <aside>
                         <span></span>
-                        <h3>9</h3>
+                        <h3>3</h3>
                     </aside>
                 </section>
                 <form action="comparision.php" method="POST">

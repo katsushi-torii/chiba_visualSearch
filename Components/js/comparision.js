@@ -48,16 +48,14 @@
     //回答を選んだ場合
     $('input').keyup((e)=>{
         let number = e.code[6];
-        if(number == 7){
-            let leftColor = $('span').eq(0).attr("class");
-            let rightColor = $('span').eq(1).attr("class");
+        let leftColor = $('span').eq(0).attr("class");
+        let rightColor = $('span').eq(1).attr("class");
+        if(number == 1){
             let selectedColor = $('span').eq(0).attr("class");
             let answer = [leftColor, rightColor, selectedColor];
             answers.push(answer);
             count += 1;
-        }else if(number == 9){
-            let leftColor = $('span').eq(0).attr("class");
-            let rightColor = $('span').eq(1).attr("class");
+        }else if(number == 3){
             let selectedColor = $('span').eq(1).attr("class");
             let answer = [leftColor, rightColor, selectedColor];
             answers.push(answer);
@@ -74,7 +72,7 @@
             // console.log($('#answers').val());
             $('form').submit();
         }
-        if(number == 7 || number == 9){
+        if(number == 1 || number == 3){
             $('span').eq(0).removeClass();
             $('span').eq(1).removeClass();
             $('span').eq(0).addClass(pairs[count][0]);
