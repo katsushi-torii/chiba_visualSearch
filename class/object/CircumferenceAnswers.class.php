@@ -10,6 +10,7 @@
         private int $targetAmount;
         private int $answerId;
         private int $targetId;
+        private string $colors;
 
         public function getId(){
             return $this->id;
@@ -80,6 +81,14 @@
         }
         public function setTargetId($targetId){
             $this->targetId = $targetId;
+            return $this;
+        }
+
+        public function getColors(){
+            return $this->colors;
+        }
+        public function setColors($colors){
+            $this->colors = $colors;
             return $this;
         }
     }

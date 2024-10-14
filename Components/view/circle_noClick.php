@@ -21,11 +21,12 @@ if(!empty($_POST)){
     $newAnswer->setTargetAmount($_POST['item_num']);
     $newAnswer->setAnswerId($_POST['answer_id']);
     $newAnswer->setTargetId($_POST['target_id']);
+    $newAnswer->setColors($_POST['other_colors']);
     $count = $_POST['count'];
 
     // var_dump($newAnswer);
 
-    // FunctionCircumferenceDAO::insertAnswer($newAnswer);
+    FunctionCircumferenceDAO::insertAnswer($newAnswer);
 
     // 実験回数の操作
     if($count == 150){

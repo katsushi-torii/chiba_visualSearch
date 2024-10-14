@@ -1,7 +1,7 @@
 <?php
 
 require_once('../../class/html/PageHead.class.php');
-require_once('../../class/html/Demo.class.php');
+require_once('../../class/html/DemoSameColor.class.php');
 
 $count = 0;
 $result = "不正解";
@@ -12,10 +12,10 @@ if(!empty($_POST)){
         $result = "正解";
     }
     echo PageHead::pageHead();
-    echo Demo::demoResult($_POST['answer'], $_POST['selectedTarget'], $result);
+    echo DemoSameColor::demoResult($_POST['answer_id']+1, $_POST['target_id']+1, $result);
 
 }else{
     echo PageHead::pageHead();
-    echo Demo::demoTest();
-    echo Demo::script($count);
+    echo DemoSameColor::demoTest();
+    echo DemoSameColor::script($count);
 }

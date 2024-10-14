@@ -10,4 +10,3 @@ $colorList = [
 echo PageHead::pageHead();
 echo Introduction::introductionComparision();
 echo Introduction::colorList($colorList);
-echo Introduction::next("_comparision");

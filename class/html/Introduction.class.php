@@ -5,7 +5,7 @@
         static function introduction(){
             $htmlIntroduction = '
             <main class="introduction">
-                <p>本テストでは1から4までの手順を計240回繰り返します。</p>
+                <p>本テストでは1から4までの手順を計120×2回繰り返します(12×2分)。画像の数は途中で変わります。</p>
                 <section>
                     <figure>
                         <img src="../../img/start.png" alt="">
@@ -27,7 +27,6 @@
                             <h4>3.</h4>
                             <p>
                                 色の画像が円周上に出てきます。ターゲット色と同じ色を見つけたら、あるいは画面上にないと思ったら、Enterキーを押してください。
-                
                                 <strong>反応時間を測定します。Enter以外のキーには触れないようお願いします。</strong>
                             </p>
                         </blockquote>
@@ -49,7 +48,7 @@
         static function introductionComparision(){
             $htmlIntroduction = '
             <main class="introduction">
-                <p>比較テストでは下の手順を計132回繰り返します。(約４分)</p>
+                <p>比較テストでは下の手順を計132回繰り返します(約４分)。</p>
                 <section>
                     <figure>
                         <img src="../../img/comparision.png" alt="">
@@ -64,7 +63,7 @@
         static function introductionSameColor(){
             $htmlIntroduction = '
             <main class="introduction">
-                <p>本テストでは1から4までの手順を計60回繰り返します。(約６分)</p>
+                <p>本テストでは1から4までの手順を計60回繰り返します(約６分)。画像の数は途中で変わります。</p>
                 <section>
                     <figure>
                         <img src="../../img/start_same.png" alt="">

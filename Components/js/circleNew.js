@@ -128,6 +128,7 @@
         }
     })
 
+    console.log(targets.join(","));
     //回答をpostする
     function postAnswer(targetId, selectedTarget, responseTime){
         $('#answer').val(answer);
@@ -136,6 +137,7 @@
         $('#item_num').val(item_num);
         $('#answer_id').val(answerId);
         $('#target_id').val(targetId);
+        $('#other_colors').val(targets.join("|"));
         $('#count').val(count += 1);
         if(answerId == targetId){
             $('#check').val(1);

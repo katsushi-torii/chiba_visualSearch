@@ -9,7 +9,7 @@
         }
 
         public static function insertAnswer($object){
-            $sql = "INSERT into answers(dateTime, answer, selectedTarget, correct, responseTime, targetAmount, answerId, targetId) VALUES (now(), :answer, :selectedTarget, :correct, :responseTime, :targetAmount, :answerId, :targetId)";
+            $sql = "INSERT into answers(dateTime, answer, selectedTarget, correct, responseTime, targetAmount, answerId, targetId, colors) VALUES (now(), :answer, :selectedTarget, :correct, :responseTime, :targetAmount, :answerId, :targetId, :colors)";
 
             self::$db->query($sql);
 
@@ -20,6 +20,7 @@
             self::$db->bind(":targetAmount", $object->getTargetAmount());
             self::$db->bind(":answerId", $object->getAnswerId());
             self::$db->bind(":targetId", $object->getTargetId());
+            self::$db->bind(":colors", $object->getColors());
 
             self::$db->execute();
             return self::$db->lastInsertId();
