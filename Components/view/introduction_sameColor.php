@@ -8,6 +8,6 @@ $colorList = [
 ];
 
 echo PageHead::pageHead();
-echo Introduction::introduction();
+echo Introduction::introductionSameColor();
 echo Introduction::colorList($colorList);
-echo Introduction::next("");
+echo Introduction::next("_sameColor");

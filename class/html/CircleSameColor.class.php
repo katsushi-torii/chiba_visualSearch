@@ -1,10 +1,10 @@
 <?php
 
-    class Circle {
+    class CircleSameColor {
         
         static function target(){
             $htmlTarget = '
-            <main class="circle">
+            <main class="circle same">
                 <figure class="target">
                     <span class="answer"></span>
                     <button class="start">+</button>
@@ -17,10 +17,9 @@
             $htmlList = '
                 <section class="circumference">
                 </section>
-                <aside class="center">
-                    <form action="circle_noClick.php" method="POST">
+                <aside class="center">                
+                    <form action="circle_sameColor.php" method="POST">
                         <input type="hidden" name="answer" id="answer">
-                        <input type="hidden" name="selectedTarget" id="selectedTarget">
                         <input type="hidden" name="check" id="check">
                         <input type="hidden" name="responseTime" id="responseTime">
                         <input type="hidden" name="item_num" id="item_num">
@@ -46,7 +45,7 @@
             <script>
                 var count = '.$count.';
             </script>
-            <script src="../../Components/js/circleNew.js" defer></script>
+            <script src="../../Components/js/circleSame.js" defer></script>
             </html>
             ';
             return $htmlScript;
