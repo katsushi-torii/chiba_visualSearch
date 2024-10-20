@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: grey;
+    background-color: $gray;
 
     .target {
         display: flex;
@@ -83,7 +83,7 @@
             width: 10vh;
             border: 2px solid black;
             transform: translate(-50%, -50%);
-            background-color: grey;
+            background-color: $gray;
             font-size: 24px;
             
             display: none;
@@ -98,7 +98,7 @@
         border: 2px solid black;
         
         > .find {
-            background-color: grey;
+            background-color: $gray;
             height: 100%;
             width: 100%;
             border: none;
@@ -118,7 +118,7 @@
             caret-color: transparent;
         }
         > .noTarget {
-            background-color: grey;
+            background-color: $gray;
             display: none;
             justify-content: center;
             align-items: center;

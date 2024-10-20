@@ -12,7 +12,7 @@ FunctionCircumferenceDAO::startDb();
 $count = 0;
 
 if(!empty($_POST)){
-
+    
     $newAnswer = new CircumferenceAnswers();
     $newAnswer->setAnswer($_POST['answer']);
     $newAnswer->setSelectedTarget($_POST['selectedTarget']);
@@ -26,7 +26,7 @@ if(!empty($_POST)){
 
     // var_dump($newAnswer);
 
-    FunctionCircumferenceDAO::insertAnswer($newAnswer);
+    // FunctionCircumferenceDAO::insertAnswer($newAnswer);
 
     // 実験回数の操作
     if($count == 150){

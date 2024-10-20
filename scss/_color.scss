@@ -1,190 +1,236 @@
-.circle, .color_check, .introduction, .demo, .comparision {
-
-    //マンセル表色系
-    .R5{
-        background-color: #ff4455;
-    }
-    .R10{
-        background-color: #ff7c31;
-    }
-    .YR5{
-        background-color: #ffae2b;
-    }
-    .YR10{
-        background-color: #ffbd28;
-    }
-    .Y5{
-        background-color: #ffe51d;
-    }
-    .Y10{
-        background-color: #f2ec4a;
-    }
-    .GY5{
-        background-color: #d0f629;
-    }
-    .GY10{
-        background-color: #10ff29;
-    }
-    .G5{
-        background-color: #59ffbd;
-    }
-    .G10{
-        background-color: #33ffd4;
-    }
-    .BG5{
-        background-color: #5afee9;
-    }
-    .BG10{
-        background-color: #42dee4;
-    }
-    .B5{
-        background-color: #50dbf9;
-    }
-    .B10{
-        background-color: #35bbf4;
-    }
-    .PB5{
-        background-color: #1798fb;
-    }
-    .PB10{
-        background-color: #7c17f4;
-    }
-    .P5{
-        background-color: #c801f9;
-    }
-    .P10{
-        background-color: #ff1de8;
-    }
-    .RP5{
-        background-color: #ff04ac;
-    }
-    .RP10{
-        background-color: #ff417f;
-    }
-    .black {
-        background-color: black;
-    }
-    .white {
-        background-color: white;
-    }
-
-    //HSL色空間
-    .HSL0 {
-        background-color: hsl(0, 100%, 50%);
-    }
-    .HSL30 {
-        background-color: hsl(30, 100%, 50%);
-    }
-    .HSL60 {
-        background-color: hsl(60, 100%, 50%);
-    }
-    .HSL90 {
-        background-color: hsl(90, 100%, 50%);
-    }
-    .HSL120 {
-        background-color: hsl(120, 100%, 50%);
-    }
-    .HSL150 {
-        background-color: hsl(150, 100%, 50%);
-    }
-    .HSL180 {
-        background-color: hsl(180, 100%, 50%);
-    }
-    .HSL210 {
-        background-color: hsl(210, 100%, 50%);
-    }
-    .HSL240 {
-        background-color: hsl(240, 100%, 50%);
-    }
-    .HSL270 {
-        background-color: hsl(270, 100%, 50%);
-    }
-    .HSL300 {
-        background-color: hsl(300, 100%, 50%);
-    }
-    .HSL330 {
-        background-color: hsl(330, 100%, 50%);
-    }
-
-    //基本色彩語、色の名前辞典
-    .red {
-        background-color: rgb(215, 29, 59);
-    }
-    .green {
-        background-color: rgb(59, 175, 117);
-    }
-    .blue {
-        background-color: rgb(0, 145, 197);
-    }
-    .yellow {
-        background-color: rgb(251, 208, 29);
-    }
-    .purple {
-        background-color: rgb(124, 75, 141);
-    }
-    .pink {
-        background-color: rgb(237, 164, 158);
-    }
-    .brown {
-        background-color: rgb(115, 66, 41);
-    }
-    .orange {
-        background-color: rgb(230, 121, 40);
-    }
-    .white {
-        background-color: rgb(255, 255, 253);
-    }
-    .gray {
-        background-color: rgb(100, 103, 102);
-    }
-    .black {
-        background-color: rgb(2, 1, 12);
-    }
-
-    //jis基本基本色名、色の名前辞典、red,blue,green,yellow,pink,purple,whiteは上から使う
-    .yellow-red {
-        background-color: rgb(225, 100, 43);
-    }
-    .yellow-green {
-        background-color: rgb(170, 204, 59);
-    }
-    .blue-green {
-        background-color: rgb(0, 163, 136);
-    }
-    .purple-blue {
-        background-color: rgb(100, 74, 141);
-    }
-    .red-purple {
-        background-color: rgb(225, 99, 155);
-    }
-
+//マンセル表色系
+.R5{
+    background-color: #ff4455;
 }
+.R10{
+    background-color: #ff7c31;
+}
+.YR5{
+    background-color: #ffae2b;
+}
+.YR10{
+    background-color: #ffbd28;
+}
+.Y5{
+    background-color: #ffe51d;
+}
+.Y10{
+    background-color: #f2ec4a;
+}
+.GY5{
+    background-color: #d0f629;
+}
+.GY10{
+    background-color: #10ff29;
+}
+.G5{
+    background-color: #59ffbd;
+}
+.G10{
+    background-color: #33ffd4;
+}
+.BG5{
+    background-color: #5afee9;
+}
+.BG10{
+    background-color: #42dee4;
+}
+.B5{
+    background-color: #50dbf9;
+}
+.B10{
+    background-color: #35bbf4;
+}
+.PB5{
+    background-color: #1798fb;
+}
+.PB10{
+    background-color: #7c17f4;
+}
+.P5{
+    background-color: #c801f9;
+}
+.P10{
+    background-color: #ff1de8;
+}
+.RP5{
+    background-color: #ff04ac;
+}
+.RP10{
+    background-color: #ff417f;
+}
+.black {
+    background-color: black;
+}
+.white {
+    background-color: white;
+}
+
+//HSL色空間
+.HSL0 {
+    background-color: hsl(0, 100%, 50%);
+}
+.HSL30 {
+    background-color: hsl(30, 100%, 50%);
+}
+.HSL60 {
+    background-color: hsl(60, 100%, 50%);
+}
+.HSL90 {
+    background-color: hsl(90, 100%, 50%);
+}
+.HSL120 {
+    background-color: hsl(120, 100%, 50%);
+}
+.HSL150 {
+    background-color: hsl(150, 100%, 50%);
+}
+.HSL180 {
+    background-color: hsl(180, 100%, 50%);
+}
+.HSL210 {
+    background-color: hsl(210, 100%, 50%);
+}
+.HSL240 {
+    background-color: hsl(240, 100%, 50%);
+}
+.HSL270 {
+    background-color: hsl(270, 100%, 50%);
+}
+.HSL300 {
+    background-color: hsl(300, 100%, 50%);
+}
+.HSL330 {
+    background-color: hsl(330, 100%, 50%);
+}
+
+//基本色彩語、色の名前辞典
+.red {
+    background-color: rgb(215, 29, 59);
+}
+.green {
+    background-color: rgb(59, 175, 117);
+}
+.blue {
+    background-color: rgb(0, 145, 197);
+}
+.yellow {
+    background-color: rgb(251, 208, 29);
+}
+.purple {
+    background-color: rgb(124, 75, 141);
+}
+.pink {
+    background-color: rgb(237, 164, 158);
+}
+.brown {
+    background-color: rgb(115, 66, 41);
+}
+.orange {
+    background-color: rgb(230, 121, 40);
+}
+.white {
+    background-color: rgb(255, 255, 253);
+}
+.gray {
+    background-color: rgb(100, 103, 102);
+}
+.black {
+    background-color: rgb(2, 1, 12);
+}
+
+//jis基本基本色名、色の名前辞典、red,blue,green,yellow,pink,purple,whiteは上から使う
+.yellow-red {
+    background-color: rgb(225, 100, 43);
+}
+.yellow-green {
+    background-color: rgb(170, 204, 59);
+}
+.blue-green {
+    background-color: rgb(0, 163, 136);
+}
+.purple-blue {
+    background-color: rgb(100, 74, 141);
+}
+.red-purple {
+    background-color: rgb(225, 99, 155);
+}
+
+
+//輝度調節後
+.red {
+    background-color: $red;
+}
+.green {
+    background-color: $green;
+}
+.blue {
+    background-color: $blue;;
+}
+.yellow {
+    background-color: $yellow;
+}
+.purple {
+    background-color: $purple;
+}
+.pink {
+    background-color: $pink;
+}
+.gray {
+    background-color: $gray;
+}
+.black {
+    background-color: $black;
+}
+.yellow-red {
+    background-color: $yellow-red;
+}
+.yellow-green {
+    background-color: $yellow-green;
+}
+.blue-green {
+    background-color: $blue-green;
+}
+.purple-blue {
+    background-color: $blue-purple;
+}
+.red-purple {
+    background-color: $red-purple;
+}
+
 
 .color {
     //グレー　輝度8.25~8.3
     background-color: rgb(107, 109, 108);
-    //赤 輝度8.29
+    // 赤 輝度8.29
     background-color: rgb(210, 37, 66);
-    //緑 8.32
+    background-color: rgb(211, 37, 66);
+    // //緑 8.32
     background-color: rgb(35, 124, 79);
-    //青　8.33
+    background-color: rgb(35, 123, 79);
+    // //青　8.33
     background-color: rgb(0, 116, 157);
-    //黄色 8.24
+    background-color: rgb(0, 115, 157);
+    // //黄色 8.24
     background-color: rgb(128, 106, 17);
-    //紫　8.31
+    background-color: rgb(129, 106, 17);
+    // //紫　8.31
     background-color: rgb(142, 85, 158);
-    //ピンク 8.26
+    // //ピンク 8.26
     background-color: rgb(149, 92, 86);
-    //黄赤　8.28
+    background-color: rgb(150, 92, 86);
+    // //黄赤　8.28
     background-color: rgb(179, 77, 29);
-    //黄緑　8.22
+    // //黄緑　8.22
     background-color: rgb(94, 116, 26);
-    //青緑　8.25
+    // //青緑　8.25
     background-color: rgb(0, 122, 101);
-    //青紫　8.24
+    background-color: rgb(0, 122, 102);
+    // //青紫　8.24
     background-color: rgb(122, 90, 172);
-    //赤紫　8.24
+    // //赤紫　8.24
     background-color: rgb(169, 75, 117);
+    background-color: rgb(169, 75, 118);
     height: 100vh;
     width: 100vw;
 }

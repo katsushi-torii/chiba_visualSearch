@@ -1,50 +1,30 @@
 //色
-// $grey: rgb(128,128,128);
-$back: rgb(0, 0, 0);
-// $grey: white;
+$white : rgb(255, 255, 253);
+$black :  rgb(2, 1, 12);
+$gray : rgb(107,109,108);
+$red : rgb(211, 37, 66);
+$green : rgb(35, 123, 79);
+$blue : rgb(0, 115, 157);
+$yellow : rgb(129, 106, 17);
+$purple : rgb(142, 85, 158);
+$pink : rgb(150, 92, 86);
+$yellow-red : rgb(179, 77, 29);
+$yellow-green : rgb(94, 116, 26);
+$blue-green : rgb(0, 122, 102);
+$blue-purple : rgb(122, 90, 172);
+$red-purple : rgb(169, 75, 118);
 
-//コントラスト比2:1で統一
-// $red: rgb(184, 0, 0);
-// $blue: rgb(72, 72, 255);
-// $yellow: rgb(191, 191, 45);
-// $violet: rgb(107, 53, 253);
-
-//輝度3.9, 5.6, 10, 15.6の順（黄色3.9はなし）
-// $red: rgb(255, 136, 136);
-// $red: rgb(255, 62, 62);
-// $red: rgb(211, 11, 11);
-// $red: rgb(179, 22, 22);
-// $blue: rgb(69, 69, 255);
-// $blue: rgb(93, 93, 250);
-// $blue: rgb(132, 132, 255);
-// $blue: rgb(169, 169, 255);
-// $yellow: rgb(114, 114, 20);
-// $yellow: rgb(179, 179, 25);
-// $yellow: rgb(146, 146, 25);
-// $violet: rgb(135, 46, 218);
-// $violet: rgb(150, 71, 223);
-// $violet: rgb(184, 15, 249);
-// $violet: rgb(204, 156, 248);
-
-//輝度10で統一
-$red: rgb(255, 61, 61);
-$blue: rgb(135, 135, 255);
-$green: rgb(0, 168, 0);
-$yellow: rgb(147, 147, 50);
-$grey: rgb(144, 144, 144);
-
-//輝度７で統一
-// $red: rgb(225, 31, 31);
-// $blue: rgb(107, 107, 255);
-// $yellow: rgb(123, 123, 47);
-// $violet: rgb(138, 108, 184);
-
-//輝度差2.2で統一
-// $red: rgb(211, 11, 11);
-// $yellow: rgb(179, 179, 25);
-// $blue: rgb(93, 93, 250);
-// $violet: rgb(150, 71, 223);
-
+$red : rgb(215, 29, 59);
+$green : rgb(59, 175, 117);
+$blue : rgb(0, 145, 197);
+$yellow : rgb(251, 208, 29);
+$purple : rgb(124, 75, 141);
+$pink : rgb(237, 164, 158);
+$yellow-red : rgb(225, 100, 43);
+$yellow-green : rgb(170, 204, 59);
+$blue-green : rgb(0, 163, 136);
+$blue-purple : rgb(100, 74, 141);
+$red-purple : rgb(225, 99, 155);
 
 * {
     padding: 0;
@@ -62,20 +42,3 @@ a {
 li {
     list-style-type: none;
 }
-
-//輝度測る用
-.sample {
-    height: 100vh;
-    background-color: black;
-    background-color: rgb(255, 61, 61);
-    // background-color: rgb(135, 135, 255);
-    // background-color: rgb(0, 168, 0);
-    // background-color: rgb(147, 147, 50);
-    // background-color: rgb(144, 144, 144);
-}
-
-// $red: rgb(211, 11, 11);
-// $blue: rgb(132, 132, 255);
-// $yellow: rgb(179, 179, 25);
-// $violet: rgb(184, 15, 249);
-// $violet: rgb(128, 128, 128);
