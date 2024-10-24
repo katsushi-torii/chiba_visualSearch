@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: $gray;
+    background-color: $black;
 
     .target {
         display: flex;
@@ -29,7 +29,7 @@
             height: 100%;
             width: 100%;
             background-color: transparent;
-            color: black;
+            color: $white;
             border: none;
             
             font-size: 100px;
@@ -54,7 +54,7 @@
             height: 10vh;
             width: 10vh;
             transform: translate(-50%, -50%);
-            border: 2px solid black;
+            border: 2px solid $white;
 
             img {
                 height: 100%;
@@ -81,10 +81,11 @@
             z-index: 3;
             height: 10vh;
             width: 10vh;
-            border: 2px solid black;
+            border: 2px solid $white;
             transform: translate(-50%, -50%);
-            background-color: $gray;
+            background-color: $black;
             font-size: 24px;
+            color: $white;
             
             display: none;
         }
@@ -95,10 +96,10 @@
         z-index: 1;
         height: 10vh;
         width: 10vh;
-        border: 2px solid black;
+        border: 2px solid $white;
         
         > .find {
-            background-color: $gray;
+            background-color: $black;
             height: 100%;
             width: 100%;
             border: none;
@@ -118,15 +119,15 @@
             caret-color: transparent;
         }
         > .noTarget {
-            background-color: $gray;
+            background-color: $black;
             display: none;
             justify-content: center;
             align-items: center;
             height: 100%;
             width: 99.99%;
             border: none;
-            // outline: 2px solid black;
-            font-size: 24px;
+            color: $white;
+            font-size: 100px;
         }
     }
 

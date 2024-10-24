@@ -203,34 +203,70 @@
     //グレー　輝度8.25~8.3
     background-color: rgb(107, 109, 108);
     // 赤 輝度8.29
-    background-color: rgb(210, 37, 66);
+    // background-color: rgb(210, 37, 66);
     background-color: rgb(211, 37, 66);
-    // //緑 8.32
-    background-color: rgb(35, 124, 79);
+    //13
+    background-color: rgb(220, 0, 37);
+    //赤は３回目の計測で順番前後
+    //緑 8.32
+    // background-color: rgb(35, 124, 79);
     background-color: rgb(35, 123, 79);
-    // //青　8.33
-    background-color: rgb(0, 116, 157);
+    //22
+    background-color: rgb(0, 126, 63);
+    // // // //青　8.33
+    // background-color: rgb(0, 116, 157);
     background-color: rgb(0, 115, 157);
-    // //黄色 8.24
-    background-color: rgb(128, 106, 17);
+    //24
+    background-color: rgb(0, 116, 158);
+    // // // //黄色 8.24
+    // background-color: rgb(128, 106, 17);
     background-color: rgb(129, 106, 17);
-    // //紫　8.31
+    background-color: rgb(129, 108, 0);
+    // // // //紫　8.31
     background-color: rgb(142, 85, 158);
-    // //ピンク 8.26
-    background-color: rgb(149, 92, 86);
+    background-color: rgb(174, 0, 224);
+    //34
+    // // // //ピンク 8.26
+    // background-color: rgb(149, 92, 86);
     background-color: rgb(150, 92, 86);
-    // //黄赤　8.28
+    background-color: rgb(196, 20, 0);
+    // // // //黄赤　8.28
     background-color: rgb(179, 77, 29);
-    // //黄緑　8.22
+    background-color: rgb(198, 63, 0);
+    //37
+    // // // //黄緑　8.22
     background-color: rgb(94, 116, 26);
-    // //青緑　8.25
-    background-color: rgb(0, 122, 101);
+    background-color: rgb(89, 119, 0);
+    //44
+    // // // //青緑　8.25
+    // background-color: rgb(0, 122, 101);
     background-color: rgb(0, 122, 102);
-    // //青紫　8.24
+    background-color: rgb(0, 123, 103);
+    //46
+    // // // //青紫　8.24
     background-color: rgb(122, 90, 172);
-    // //赤紫　8.24
-    background-color: rgb(169, 75, 117);
-    background-color: rgb(169, 75, 118);
+    // background-color: rgb(112, 23, 255);
+    // // // //赤紫　8.24
+    // background-color: rgb(169, 75, 117);
+    background-color: rgb(213, 0, 96);
+    //58
+
+
+    // //背景色1/2
+    // background-color: rgb(77, 77, 77);
+    // //背景色1/4
+    // background-color: rgb(57, 57, 57);
+    //ログの値が1/2
+    // background-color: rgb(66, 66, 66);
+    //ログの値が1/3
+    // background-color: rgb(57, 57, 57);
+    // background-color: $black;
+
+    // // //青紫
+    // background-color: rgb(131, 66, 235);
+    //53
+    // // //紫
+    // background-color: rgb(170, 0, 217);
     height: 100vh;
     width: 100vw;
 }

@@ -2,7 +2,7 @@
 
     // let colors = ["yellow-red", "yellow-green", "blue-green"];
     let colors = [
-        "yellow-red", "yellow-green", "blue-green", "purple-blue", "red-purple", "red", "blue", "green", "yellow", "pink", "purple", "white"
+        "yellow-red", "yellow-green", "blue-green", "purple-blue", "red-purple", "red", "blue", "green", "yellow", "pink", "purple", "gray"
     ];
 
     let colors_num = colors.length;

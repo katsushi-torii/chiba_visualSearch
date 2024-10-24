@@ -32,8 +32,7 @@
                         <input type="text" name="number" id="number" autocomplete="off">
                     </form>
                     <button class="noTarget">
-                        なし <br/>
-                        0
+                        +
                     </button>
                 </aside>
             </main>

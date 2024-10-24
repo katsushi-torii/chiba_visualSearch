@@ -10,7 +10,7 @@
     // ];
 
     let colors = [
-        "yellow-red", "yellow-green", "blue-green", "purple-blue", "red-purple", "red", "blue", "green", "yellow", "pink", "purple", "white"
+        "yellow-red", "yellow-green", "blue-green", "purple-blue", "red-purple", "red", "blue", "green", "yellow", "pink", "purple", "gray"
     ];
 
     //表示する画像の数
@@ -86,10 +86,11 @@
         $('.circumference').css("display", "flex");
         $('.center').css("display", "flex");
         $('.center').css("border", "none");
+        $('.noTarget').css("display", "flex");
         $('#find').focus();
     }
     function start(){
-        $('.start').css("background-color", "grey");
+        $('.start').css("background-color", "black");
         setTimeout(showTargets, 500);
         startTime = Date.now();
     }
@@ -97,24 +98,14 @@
 
     let results = [];
 
-    //作成用コード、実際には使わない
-    $('.start').click(()=>{
-        startTime = Date.now();
-        $('.target').css("display", "none");
-        $('.circumference').css("display", "flex");
-        $('.center').css("display", "flex");
-        $('.center').css("border", "none");
-        $('.start').css("background-color", "grey");
-        $('#find').focus();
-    })
-
     //回答を見つけた場合
     $('#find').keyup((e)=>{
         if(e.code[6] == "E"){
             endTime = Date.now();
             $('#find').css("display", "none");
             $('.select').css("display", "flex");
-            $('.noTarget').css("display", "flex");
+            $('.noTarget').css("font-size", "24px");
+            $('.noTarget').html("なし <br/>0");
             $('#number').focus();
         }
     })

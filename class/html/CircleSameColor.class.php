@@ -29,10 +29,7 @@
                         <input type="text" name="find" id="find" autocomplete="off">
                         <input type="text" name="number" id="number" autocomplete="off">
                     </form>
-                    <button class="noTarget">
-                        なし <br/>
-                        0
-                    </button>
+                    <button class="noTarget">+</button>
                 </aside>
             </main>
             ';
