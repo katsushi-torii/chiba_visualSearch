@@ -6,7 +6,7 @@
             <main class="circle same">
                 <figure class="target">
                     <span class="answer"></span>
-                    <button class="start">+</button>
+                    <button class="start">●</button>
                 </figure>
                 <section class="circumference">
                 </section>
@@ -23,8 +23,7 @@
                         <input type="text" name="number" id="number" autocomplete="off">
                     </form>
                     <button class="noTarget">
-                        なし <br/>
-                        0
+                        ●
                     </button>
                 </aside>
             </main>

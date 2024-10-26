@@ -90,7 +90,7 @@
         $('#find').focus();
     }
     function start(){
-        $('.start').css("background-color", "black");
+        $('.start').css("background-color", "rgb(66, 66, 66)");
         setTimeout(showTargets, 500);
         startTime = Date.now();
     }

@@ -23,7 +23,7 @@ if(!empty($_POST)){
         $newAnswer->setSelectedColor($answerArray[2]);
         var_dump($newAnswer);
 
-        // FunctionComparisionDAO::insertAnswer($newAnswer);
+        FunctionComparisionDAO::insertAnswer($newAnswer);
     }
 }
 

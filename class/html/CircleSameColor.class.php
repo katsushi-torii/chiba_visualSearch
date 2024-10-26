@@ -7,7 +7,7 @@
             <main class="circle same">
                 <figure class="target">
                     <span class="answer"></span>
-                    <button class="start">+</button>
+                    <button class="start">●</button>
                 </figure>
             ';
             return $htmlTarget;
@@ -29,7 +29,7 @@
                         <input type="text" name="find" id="find" autocomplete="off">
                         <input type="text" name="number" id="number" autocomplete="off">
                     </form>
-                    <button class="noTarget">+</button>
+                    <button class="noTarget">●</button>
                 </aside>
             </main>
             ';
