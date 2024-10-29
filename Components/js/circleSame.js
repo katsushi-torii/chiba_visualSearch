@@ -39,7 +39,6 @@
 
     
     let randomId = Math.floor(Math.random() * colors.length);
-    console.log(randomId);
     if(randomId < item_num){
         $('.color-box').eq(randomId).html("●");
     }
@@ -90,7 +89,7 @@
         $('#find').focus();
     }
     function start(){
-        $('.start').css("background-color", "rgb(66, 66, 66)");
+        $('.start').css("background-color", "rgb(71, 65, 66)");
         setTimeout(showTargets, 500);
         startTime = Date.now();
     }
@@ -98,15 +97,34 @@
 
     let results = [];
 
+
+    function showNumbers(){
+        $('.color-box').removeClass("gray1");
+        $('.color-box').removeClass("gray2");
+        $('.color-box').removeClass("gray3");
+        $('.color-box').removeClass("gray4");
+        $('.select').css("display", "flex");
+    }
+    function showMosaic2(){
+        for(let i = 0; i < item_num; i++){
+            let randomGray = Math.floor(Math.random() * 4) + 1;
+            $('.color-box').eq(i).addClass(`gray${randomGray}`);
+        }
+        setTimeout(showNumbers, 500);
+    }
     //回答を見つけた場合
     $('#find').keyup((e)=>{
         if(e.code[6] == "E"){
             endTime = Date.now();
             $('#find').css("display", "none");
-            $('.select').css("display", "flex");
             $('.noTarget').css("font-size", "24px");
             $('.noTarget').html("なし <br/>0");
             $('#number').focus();
+            for(let i = 0; i < item_num; i++){
+                let randomGray = Math.floor(Math.random() * 4) + 1;
+                $('.color-box').eq(i).addClass(`gray${randomGray}`);
+            }
+            setTimeout(showMosaic2, 500);
         }
     })
     
