@@ -20,13 +20,22 @@
         > figure {
             display: flex;
             flex-direction: column;
-            width: 40vh;
+            width: 33vh;
             border: 1px solid black;
         }
 
+        > .comparisionFigure {
+            width: 45vh;
+
+            img {
+                width: 45vh;
+                height: 45vh;
+            }
+        }
+
         img {
-            height: 40vh;
-            width: 40vh;
+            height: 33vh;
+            width: 33vh;
         }
 
         blockquote {

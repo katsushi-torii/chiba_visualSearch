@@ -100,6 +100,9 @@
         $('.color-box').removeClass("gray3");
         $('.color-box').removeClass("gray4");
         $('.select').css("display", "flex");
+        $('.noTarget').css("font-size", "24px");
+        $('.noTarget').html("なし <br/>0");
+        $('#number').focus();
     }
     function showMosaic2(){
         for(let i = 0; i < item_num; i++){
@@ -113,10 +116,6 @@
         if(e.code[6] == "E"){
             endTime = Date.now();
             $('#find').css("display", "none");
-            $('.noTarget').css("font-size", "24px");
-            $('.noTarget').html("なし <br/>0");
-            $('#number').focus();
-            console.log("test");
             for(let i = 0; i < item_num; i++){
                 let randomGray = Math.floor(Math.random() * 4) + 1;
                 $('.color-box').eq(i).addClass(`gray${randomGray}`);
@@ -138,7 +137,6 @@
         }
     })
 
-    console.log(targets.join(","));
     //回答をpostする
     function postAnswer(targetId, selectedTarget, responseTime){
         $('#answer').val(answer);

@@ -10,6 +10,7 @@
                         <span></span>
                         <h3>1</h3>
                     </aside>
+                    <button>●</button>
                     <aside>
                         <span></span>
                         <h3>3</h3>
