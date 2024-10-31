@@ -5,7 +5,7 @@
         static function introduction(){
             $htmlIntroduction = '
             <main class="introduction">
-                <p>本テストでは1から4までの手順を計120×2回繰り返します(12×2分)。画像の数は途中で変わります。</p>
+                <p>本テストでは1から5までの手順を計40繰り返します(約５分)。画像の数は途中で変わります。</p>
                 <section>
                     <figure>
                         <img src="../../img/start.png" alt="">
@@ -18,7 +18,7 @@
                         <img src="../../img/greyed.png" alt="">
                         <blockquote>
                             <h4>2.</h4>
-                            <p>0.5秒間ターゲットが消えます。視線はそのままでお願いします。</p>
+                            <p>0.5秒間ターゲットが消えます。視線はそのまま固視点に合わせていてください。</p>
                         </blockquote>
                     </figure>
                     <figure>
@@ -26,8 +26,8 @@
                         <blockquote>
                             <h4>3.</h4>
                             <p>
-                                色の画像が円周上に出てきます。ターゲット色と同じ色を見つけたら、あるいは画面上にないと思ったら、Enterキーを押してください。
-                                <strong>反応時間を測定します。Enter以外のキーには触れないようお願いします。</strong>
+                                色のついた正方形が円周上に表示されます。ターゲット色と同じ色を見つけたら、あるいは画面上にないと思ったら、STOPキーを押してください。
+                                <strong>反応時間を測定するので見つけた瞬間にSTOPキーを押してください。他のキーには触れないようお願いします。</strong>
                             </p>
                         </blockquote>
                     </figure>
@@ -36,7 +36,7 @@
                         <blockquote>
                             <h4>4.</h4>
                             <p>
-                                一瞬各色がグレーに切り替わります。
+                                0.5~1.5秒間モザイクが入ります。
                             </p>
                         </blockquote>
                     </figure>
@@ -46,7 +46,7 @@
                             <h4>5.</h4>
                             <p>
                                 ターゲットがあった場合、その位置の数字を、なかった場合、0を押してください。
-                                <strong>反応時間は測定しないです。数字以外のキーには触れないようお願いします。</strong>
+                                <strong>ここでは反応時間は測定しないです。回答以外のキーには触れないようお願いします。</strong>
                             </p>
                         </blockquote>
                     </figure>
@@ -62,7 +62,7 @@
                     <figure class="comparisionFigure">
                         <img src="../../img/comparision.png" alt="">
                         <blockquote>
-                            <p>視点を中心の白丸に合わせた状態で、近いと感じる方の色を選んでください。左の方が近いと感じた場合、1を、右の場合は3を押してください。</p>
+                            <p>視点を中心の固視点に合わせた状態で、自身に近いと感じる方の色を選んでください。<br/>左の方が近いと感じた場合は1を、右の場合は3を、押してください。</p>
                         </blockquote>
                     </figure>
                 </section>';
@@ -73,28 +73,27 @@
             $htmlIntroduction = '
             <main class="introduction">
                 <p>本テストでは1から4までの手順を計60回繰り返します(約６分)。画像の数は途中で変わります。</p>
-                <section>
-                    <figure>
+                <section>                    <figure>
                         <img src="../../img/start.png" alt="">
                         <blockquote>
                             <h4>1.</h4>
-                            <p>色が3秒間表示されます。視線を固視点に合わせつつ色を覚えてください。</p>
+                            <p>ターゲット色が3秒間表示されます。視線を固視点に合わせつつ色を覚えてください。</p>
                         </blockquote>
                     </figure>
                     <figure>
                         <img src="../../img/greyed.png" alt="">
                         <blockquote>
                             <h4>2.</h4>
-                            <p>0.5秒間ターゲットが消えます。視線はそのままでお願いします。</p>
+                            <p>0.5秒間ターゲットが消えます。視線はそのまま固視点に合わせていてください。</p>
                         </blockquote>
                     </figure>
                     <figure>
-                        <img src="../../img/response_same.png" alt="">
+                        <img src="../../img/response.png" alt="">
                         <blockquote>
                             <h4>3.</h4>
                             <p>
-                                色の画像が円周上に出てきます。●がある図形を見つけたら、あるいはそれがないと思ったら、Enterキーを押してください。
-                                <strong>反応時間を測定します。Enter以外のキーには触れないようお願いします。</strong>
+                                色のついた正方形が円周上に表示されます。●がある正方形を見つけたら、あるいはないとそれがないと思ったら、STOPキーを押してください。
+                                <strong>反応時間を測定するので見つけた瞬間にSTOPキーを押してください。他のキーには触れないようお願いします。</strong>
                             </p>
                         </blockquote>
                     </figure>
@@ -103,7 +102,7 @@
                         <blockquote>
                             <h4>4.</h4>
                             <p>
-                                一瞬各色がグレーに切り替わります。
+                                0.5~1.5秒間モザイクが入ります。
                             </p>
                         </blockquote>
                     </figure>
@@ -113,7 +112,7 @@
                             <h4>5.</h4>
                             <p>
                                 ●があった場合、その位置の数字を、なかった場合、0を押してください。
-                                <strong>反応時間は測定しないです。数字以外のキーには触れないようお願いします。</strong>
+                                <strong>ここでは反応時間は測定しないです。回答以外のキーには触れないようお願いします。</strong>
                             </p>
                         </blockquote>
                     </figure>
