@@ -33,8 +33,18 @@
         let stimulate = $(`
             <span class="color-box ${answer}"></span>
             <button class="select ${i}">${i+1}</button>
-                `);
+        `);
+        let mosaicTable = $(`<table class="mosaic"></table>`);
+        for(let j = 0; j < 8; j++){
+            let tr = $(`<tr></tr>`);
+            for(let k = 0; k < 8; k++){
+                let td = $(`<td></td>`);
+                tr.append(td);
+            }
+            mosaicTable.append(tr);
+        }
         $('.circumference').append(stimulate);
+        $('.circumference').append(mosaicTable);
     }
 
     
@@ -50,12 +60,6 @@
     let radians90 = (90 * Math.PI) / 180.0;
     //大きい円の半径
     let radius = $('.circumference').width() / 2;
-    $('.option').each((i, elem)=>{
-        let x = Math.cos(radians * i - radians90) * radius + radius;
-        let y = Math.sin(radians * i - radians90) * radius + radius;
-        $(elem).css("left", x);
-        $(elem).css("top", y);
-    })
     $('.color-box').each((i, elem)=>{
         let x = Math.cos(radians * i - radians90) * radius + radius;
         let y = Math.sin(radians * i - radians90) * radius + radius;
@@ -63,6 +67,12 @@
         $(elem).css("top", y);
     })
     $('.select').each((i, elem)=>{
+        let x = Math.cos(radians * i - radians90) * radius + radius;
+        let y = Math.sin(radians * i - radians90) * radius + radius;
+        $(elem).css("left", x);
+        $(elem).css("top", y);
+    })
+    $('.mosaic').each((i, elem)=>{
         let x = Math.cos(radians * i - radians90) * radius + radius;
         let y = Math.sin(radians * i - radians90) * radius + radius;
         $(elem).css("left", x);
@@ -97,35 +107,42 @@
 
     let results = [];
 
-
+    //モザイクを消して数字を表示
     function showNumbers(){
-        $('.color-box').removeClass("gray1");
-        $('.color-box').removeClass("gray2");
-        $('.color-box').removeClass("gray3");
-        $('.color-box').removeClass("gray4");
+        $('.mosaic td').removeClass("gray1");
+        $('.mosaic td').removeClass("gray2");
+        $('.mosaic td').removeClass("gray3");
+        $('.mosaic td').removeClass("gray4");
+        $('.mosaic').removeClass(`black`);
         $('.select').css("display", "flex");
         $('.noTarget').css("font-size", "24px");
         $('.noTarget').html("なし <br/>0");
         $('#number').focus();
     }
+
+    //モザイク２を表示
     function showMosaic2(){
-        for(let i = 0; i < item_num; i++){
+        for(let i = 0; i < item_num*64; i++){
             let randomGray = Math.floor(Math.random() * 4) + 1;
-            $('.color-box').eq(i).addClass(`gray${randomGray}`);
+            $('.mosaic td').eq(i).addClass(`gray${randomGray}`);
         }
-        setTimeout(showNumbers, 500);
+        let randomTime = Math.floor(Math.random() * 5) + 1;
+        let mosaicTime = 250 + randomTime*100;
+        setTimeout(showNumbers, mosaicTime);
     }
-    //回答を見つけた場合
+    //回答を見つけた場合、モザイク1を表示
     $('#find').keyup((e)=>{
         if(e.code[6] == "E"){
             endTime = Date.now();
             $('#find').css("display", "none");
-            $('.color-box').eq(randomId).html("");
-            for(let i = 0; i < item_num; i++){
+            $('.mosaic').addClass(`black`);
+            for(let i = 0; i < item_num*64; i++){
                 let randomGray = Math.floor(Math.random() * 4) + 1;
-                $('.color-box').eq(i).addClass(`gray${randomGray}`);
+                $('.mosaic td').eq(i).addClass(`gray${randomGray}`);
             }
-            setTimeout(showMosaic2, 500);
+            let randomTime = Math.floor(Math.random() * 5) + 1;
+            let mosaicTime = 250 + randomTime*100;
+            setTimeout(showMosaic2, mosaicTime);
         }
     })
     

@@ -39,7 +39,7 @@
         for(let j = 0; j < 8; j++){
             let tr = $(`<tr></tr>`);
             for(let k = 0; k < 8; k++){
-                let td = $(`<td></tds>`);
+                let td = $(`<td></td>`);
                 tr.append(td);
             }
             mosaicTable.append(tr);
@@ -104,16 +104,20 @@
 
     let results = [];
 
+    //モザイクを消して数字を表示
     function showNumbers(){
         $('.mosaic td').removeClass("gray1");
         $('.mosaic td').removeClass("gray2");
         $('.mosaic td').removeClass("gray3");
         $('.mosaic td').removeClass("gray4");
+        $('.mosaic').removeClass(`black`);
         $('.select').css("display", "flex");
         $('.noTarget').css("font-size", "24px");
         $('.noTarget').html("なし <br/>0");
         $('#number').focus();
     }
+
+    //モザイク２を表示
     function showMosaic2(){
         for(let i = 0; i < item_num*64; i++){
             let randomGray = Math.floor(Math.random() * 4) + 1;
@@ -123,11 +127,13 @@
         let mosaicTime = 250 + randomTime*100;
         setTimeout(showNumbers, mosaicTime);
     }
-    //回答を見つけた場合
+
+    //回答を見つけた場合、モザイク１を表示
     $('#find').keyup((e)=>{
         if(e.code[6] == "E"){
             endTime = Date.now();
             $('#find').css("display", "none");
+            $('.mosaic').addClass(`black`);
             for(let i = 0; i < item_num*64; i++){
                 let randomGray = Math.floor(Math.random() * 4) + 1;
                 $('.mosaic td').eq(i).addClass(`gray${randomGray}`);
