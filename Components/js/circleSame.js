@@ -103,6 +103,7 @@
         $('.mosaic td').removeClass("gray3");
         $('.mosaic td').removeClass("gray4");
         $('.mosaic').removeClass(`black`);
+        $('.color-box').addClass(`black`);
         $('.select').css("display", "flex");
         $('.noTarget').css("font-size", "24px");
         $('.noTarget').html("なし <br/>0");
@@ -125,6 +126,7 @@
             endTime = Date.now();
             $('#find').css("display", "none");
             $('.mosaic').addClass(`black`);
+            $('.color-box').addClass(`black`);
             for(let i = 0; i < item_num*64; i++){
                 let randomGray = Math.floor(Math.random() * 4) + 1;
                 $('.mosaic td').eq(i).addClass(`gray${randomGray}`);

@@ -10,7 +10,7 @@
     > section {
         display: flex;
         justify-content: center;
-        column-gap: 5vh;
+        column-gap: 3vh;
     }
 
     aside {
@@ -27,7 +27,8 @@
         height: 10vh;
         border: none;
         color: $white;
-        font-size: 40px;
+        font-size: 24px;
+        font-weight: 100;
     }
 
     span {

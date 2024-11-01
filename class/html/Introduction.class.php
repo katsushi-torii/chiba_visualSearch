@@ -88,7 +88,7 @@
                         </blockquote>
                     </figure>
                     <figure>
-                        <img src="../../img/response.png" alt="">
+                        <img src="../../img/response_same.png" alt="">
                         <blockquote>
                             <h4>3.</h4>
                             <p>
