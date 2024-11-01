@@ -1,13 +1,4 @@
     //ここで表示する画像を調整
-    // let colors = [
-    //     "HSL0", "HSL30", "HSL60", "HSL90", "HSL120", 
-    //     "HSL150", "HSL180", "HSL210", "HSL240", "HSL270", 
-    //     "HSL300", "HSL330", "black", "white" 
-    // ];
-
-    // let colors = [
-    //     "red", "green", "blue", "yellow", "purple", "pink", "brown", "orange", "white", "black"
-    // ];
 
     let colors = [
         "yellow-red", "yellow-green", "blue-green", "purple-blue", "red-purple", "red", "blue", "green", "yellow", "pink", "purple", "gray"
@@ -15,7 +6,7 @@
 
     //表示する画像の数
     let item_num = 8;
-    if(count >= 60){
+    if(count >= 30){
         item_num = 6;
     }
 

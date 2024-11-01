@@ -12,7 +12,7 @@
     }
 
     > section {
-        height: 60vh;
+        max-height: 60vh;
         display: flex;
         justify-content: center;
         column-gap: 3vh;
@@ -25,11 +25,9 @@
         }
 
         > .comparisionFigure {
-            width: 45vh;
-
-            img {
-                width: 45vh;
-                height: 45vh;
+            blockquote {
+                display: flex;
+                justify-content: center;
             }
         }
 
@@ -41,15 +39,15 @@
         blockquote {
             display: flex;
             flex-direction: column;
-            padding: 2vh;
+            padding: 1vh;
             height: 100%;
 
             > h4 {
-                font-size: 24px;
+                font-size: 16px;
             }
 
             > p {
-                font-size: 20px;
+                font-size: 12px;
             }
         }
 

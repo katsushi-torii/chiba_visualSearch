@@ -5,7 +5,7 @@
         static function home(){
             $htmlHome = '
                 <main class="home">
-                    <p>色の進出後退現象が色の発見しやすさにもたらす影響</p>
+                    <p>視覚探索課題</p>
                     <aside>
                         <a href="../../Components/view/introduction_comparision.php">比較テスト説明</a>
                         <a href="../../Components/view/comparision.php">比較テスト</a>

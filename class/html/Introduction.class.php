@@ -5,7 +5,7 @@
         static function introduction(){
             $htmlIntroduction = '
             <main class="introduction">
-                <p>本テストでは1から5までの手順を計40繰り返します(約５分)。画像の数は途中で変わります。</p>
+                <p>本テストでは1から5までの手順を計40回繰り返します(約５分)。画像の数は途中で変わります。</p>
                 <section>
                     <figure>
                         <img src="../../img/start.png" alt="">
@@ -57,12 +57,12 @@
         static function introductionComparision(){
             $htmlIntroduction = '
             <main class="introduction">
-                <p>比較テストでは下の手順を計132回繰り返します(約４分)。</p>
+                <p>比較テストでは下の手順を計132回繰り返します(約5分)。</p>
                 <section>
                     <figure class="comparisionFigure">
                         <img src="../../img/comparision.png" alt="">
                         <blockquote>
-                            <p>視点を中心の固視点に合わせた状態で、自身に近いと感じる方の色を選んでください。<br/>左の方が近いと感じた場合は1を、右の場合は3を、押してください。</p>
+                            <p>視点を中心の固視点に合わせた状態で、手前にあると感じる方の色を選んでください。<br/>左の方が近いと感じた場合は1を、右の場合は3を、押してください。</p>
                         </blockquote>
                     </figure>
                 </section>';
@@ -72,7 +72,7 @@
         static function introductionSameColor(){
             $htmlIntroduction = '
             <main class="introduction">
-                <p>本テストでは1から4までの手順を計60回繰り返します(約６分)。画像の数は途中で変わります。</p>
+                <p>本テストでは1から4までの手順を計40回繰り返します(約5分)。画像の数は途中で変わります。</p>
                 <section>                    <figure>
                         <img src="../../img/start.png" alt="">
                         <blockquote>
