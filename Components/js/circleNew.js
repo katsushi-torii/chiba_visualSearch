@@ -6,7 +6,7 @@
 
     //表示する画像の数
     let item_num = 8;
-    if(count >= 30){
+    if(count >= 20){
         item_num = 6;
     }
 

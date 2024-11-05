@@ -27,7 +27,7 @@ if(!empty($_POST)){
     FunctionCircumferenceDAO::insertAnswerSameColor($newAnswer);
 
     // 実験回数の操作
-    if($count == 60){
+    if($count == 40){
         header("Location: ./home.php");
     }
 }
