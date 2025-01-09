@@ -1,0 +1,34 @@
+.rank {
+
+
+    padding: 3vh;
+    table {
+        table-layout: fixed;
+        border-collapse: collapse;
+        border: 1px solid black;
+    }
+    tr {
+        display: flex;
+    }
+    th, td {
+        height: 10vh;
+        width: 10vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+
+
+        section {
+            height: 5vh;
+            width: 10vh;
+        }
+    }
+    th {
+        border: 1px solid black; /* 列名部分に枠線 */
+    }
+    td:first-child {
+        border: 1px solid black; /* 行名部分に枠線 */
+    }
+}

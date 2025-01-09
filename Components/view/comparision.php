@@ -25,6 +25,7 @@ if(!empty($_POST)){
 
         FunctionComparisionDAO::insertAnswer($newAnswer);
     }
+
 }
 
 
